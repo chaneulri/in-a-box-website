@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="img\favicon.ico" type="image/x-icon" style="max-width: 500px">
+  <title>In a Box - Other Items</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="footer.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<style type="text/css">
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+
+
+
+.divider
+{
+  position: relative;
+  margin-top: 20px;
+  height: 50px;
+}
+
+.div-transparent:before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #6dad03, transparent);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1800px;
+  margin-block: 1rem;
+  gap: 2rem;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(25rem, calc(25rem + 2vw), 25rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: white;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+.card__header{
+  font-family:'Apple Chancery';
+  color: navy;
+  font-weight: bolder;
+}
+
+.btn {
+  background-color: #99cc00;
+  border: none;
+  color: white;
+  padding: 0.5rem 6rem;
+  text-align: center;
+  font-size: 16px;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #1a2e46;
+  color: white;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.h1 {
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+
+</head>
+<!--backgroundcolor-->
+<body style="background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);">
+
+
+ <!--- navbar start --->
+<nav class="navbar navbar-expand-lg navbar-light">
+
+    <div class="container-fluid">
+      <img src="img\logo.png" style="max-width: 100%; max-height: 60px" >
+    <a class="navbar-brand" href="home.html">In a Box</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navColor01" aria-controls="navColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services and products offered</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="recipe guides.html">Recipe guides</a>
+            <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="bake at home set.html">Bake at Home Sets</a>
+            <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="ingredients.html">Ingredients</a>
+            <div class="dropdown-divider"></div> 
+            <a class="dropdown-item" href="other items.html">Other items</a>
+      </div>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="packages offered.html">Packages Offered</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+ </div>
+ </div>
+ </nav>
+ <!--- navbar end --->
+ 
+   <!-- Sign Up Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Sign Up
+</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+<form>
+
+<div class="mb-3 mt-3">
+    <label for="name" class="form-label">Full Name:</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name">
+  </div>
+
+  <div class="mb-3 mt-3">
+    <label for="username" class="form-label">Username:</label>
+    <input type="text" class="form-control" id="username" name="username" placeholder="Enter your  username">
+  </div>
+
+
+<div class="mb-3 mt-3">
+    <label for="phone" class="form-label">Mobile Number:</label>
+    <input type="tel" class="form-control" id="phone"  name="phone" placeholder="Enter your moblie number">
+  </div>
+
+
+
+<div class="mb-3 mt-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+  </div>
+
+
+<div>
+<label for="password">Password:</label>
+<input type="password" name="password" class="form-control" id="password" placeholder="Enter your password" name="password">
+</div>
+<br>
+<div>
+<label for="password">Confirm Password:</label>
+<input type="password" name="cpassword" class="form-control" id="cpassword" placeholder="Confirm your password" name="cpassword">
+</div>
+<br>
+
+<div class="container-fluid" align="center">
+<button type="submit" class="btn btn-dark">Sign Up</button>
+<br><b>or</b><br>
+<a href="#">Sign In</a>
+</div>
+</form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Open-Face Burger Deluxe Recipe Modal -->
+<div class="modal fade" id="myModal1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Open-Face Burger Deluxe</h5>
+        <p>with healthy vegetable salad</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 1 lb 93% lean ground beef<br>
+            &#9656 3 medium onions<br>
+            &#9656 1 Tbsp capers<br>
+            &#9656 1 dill pickle<br>
+            &#9656 1 tsp Dijon mustard<br>
+            &#9656 2 garlic cloves<br>
+            &#9656 1 Tbsp fresh bread crumbs<br>
+            &#9656 2 Tbsp olive oil<br>
+            &#9656 fresh ground black pepper<br>
+            &#9656 1 slice of toasted baguette<br>
+            &#9656 1 large tomato<br>
+            &#9656 1 ripe avocado<br>
+            &#9656 romaine lettuce leaves<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Slice two of the onions lengthwise into thin strips and place in a medium saute pan, over medium-low heat with 1 tablespoon of olive oil. Partially cover with aluminum foil. The foil traps some of the moisture during cooking, but not all. This allows the onions to caramelize without burning and end up sweet, tender and deep amber in color. Reserve the onions to be served warm as a garnish with the burgers.<br>
+&#10113 Grate one onion, mince garlic, finely chop pickles, finely chop capers and combine in a mixing bowl with the extra lean ground beef, mustard, black pepper, I tablespoon of olive oil and black pepper. Mix thoroughly and form into four plump patties.<br>
+&#10114 Grill or pan fry burgers over medium heat to a doneness of medium-rare. or at the most medium. Well-done burgers will dry out. A little pink should still show. Also, extra low-fat burgers cook quickly, so keep on eye on them.<br>
+&#10115 Toast one slice of baguette or sourdough and place on a plate already garnished with tender leaves of romaine, avocado and tomato slices. Serve the burger on the toast, open-face, with the caramelized onions alongside, or smothering the burger patty. These are a somewhat healthier and more sophisticated substitute for French fries.<br>
+<b>RECIPE NOTES</b><br>
+Do not add salt to this recipe! The capers, pickle and mustard already contain ample sodium and impart a lovely flavor accent to the meat.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Half & Half Meat Loaf Recipe Modal -->
+<div class="modal fade" id="myModal2">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Half & Half Meat Loaf</h5>
+        <p>with mash potato</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 .75 lb 7% Fat Ground Beef<br>
+            &#9656 .75 lb 7% Fat Ground Pork<br>
+            &#9656 1 ea onion<br>
+            &#9656 2 ea Celery Stalks<br>
+            &#9656 1 ea Carrot<br>
+            &#9656 1 cup Brown Mushrooms (for extra meat texture)<br>
+            &#9656 5 ea garlic cloves<br>
+            &#9656 2 Tbsp olive oil<br>
+            &#9656 .5 tsp salt<br>
+            &#9656 .5 tsp black pepper<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Clean and chop the onion, celery, carrot, garlic and mushroom. Combine all the vegetable ingredients in a food processor and pulse to a consistency of coarse damp sand.<br>
+&#10113 In a large mixing bowl, combine the beef and pork, along with the processed vegetables, olive oil and seasonings. Mix thoroughly by hand. Then form the mixture into an oiled loaf pan or casserole. Place in a 375 degree oven for 30 to 40 minutes.<br>
+&#10114 Remove meatloaf from oven. Pour oﬀ and reserve the lean, low-fat pan liquor as a light, broth-like gravy. Let the meatloaf stand and rest for a few minutes before cutting and serving with potato/cauliﬂower mash. Drizzle with the pan liquor as desired.<br>
+<b>RECIPE NOTES</b><br>
+This stick-to-your-ribs dish offers reduced saturated fat and calories thanks to the use of very low-fat ground meat and a medley of aromatic vegetables in almost equal quantity. Served over a healthy dollop of our half & half potato/cauliﬂower mash, it’s extremely ‘comfortable’ comfort food!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Mango Whip Recipe Modal -->
+<div class="modal fade" id="myModal3">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Mango Whip</h5>
+        <p>with mint and foamy top</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 2 ea Ripe Mangoes<br>
+            &#9656 1 cup Non-Fat Evaporated Milk<br>
+            &#9656 6 sprigs fresh mint<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Pre-chill both the whole mangoes and the evaporated milk.<br>
+&#10113 Peel and dice the mangoes into small cubes. Place most of the diced mango in a blender or food processor and puree to a smooth, silky consistency. Reserve a small portion of the diced mango for garnish.<br>
+&#10114 Pour the pre-chilled, non-fat evaporated milk into a pre-chilled mixing bowl and whip at medium-high speed to the consistency of semi-stiﬀ peaks.<br>
+&#10115 At this stage, gently add the mango puree and mix on slow speed for about 30 seconds, incorporating the two ingredients thoroughly. This step may also be done by hand, folding the mango puree into the whipped milk for a ﬁrmer overall consistency.<br>
+&#10116 Place a small portion of the reserved, diced mango in the bottom of each individual serving glass. They spoon in the Mango Whip. Chill the ﬁlled glasses for at least 15minutes before serving. Garnish with a small sprig of mint.<br>
+<b>RECIPE NOTES</b><br>
+This super light, incredibly easy dessert recipe consists of just 2 ingredients, contains no saturated fat and no added sugar, yet it’s subtly, pleasantly sweet thanks to the ripe mango.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Savory Whole Wheat Crepes Recipe Modal -->
+<div class="modal fade" id="myModal4">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Savory Whole Wheat Crepes</h5>
+        <p>with a touch of sweetness</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 2 ea Eggs<br>
+            &#9656 1.25 cups Milk<br>
+            &#9656 1 Tbsp All Purpose Flour<br>
+            &#9656 1 Tbsp Whole Wheat Flour<br>
+            &#9656 2 Tbsp Melted Butter<br>
+            &#9656 1 ea zucchini<br>
+            &#9656 .5 ea onion<br>
+            &#9656 2 ea garlic cloves<br>
+            &#9656 .5 cup Tomato (coarse chopped)<br>
+            &#9656 .5 cup Mushrooms (coarse chopped)<br>
+            &#9656  1 Tbsp olive oil<br>
+            &#9656 1 pinch Rosemary<br>
+            &#9656 1 pinch salt<br>
+            &#9656 freshly ground black pepper<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Combine the eggs, milk, ﬂour and melted butter in a blender or mixing bowl. Blend ingredients thoroughly to the consistency of thin but viscous (pourable) batter. No lumps please!<br>
+&#10113 Bring a heavy, well seasoned cast iron pan up to medium high heat. A heavy, non-stick aluminum pan will work, but not as well as cast iron. The pan should be big enough to make a crepe the size of a large dinner plate. The pan must be piping hot to create the appetizing brown lace eﬀect of a good crepe. And be prepared to sacriﬁce the ﬁrst one to the pancake gods. It happens to the best of us!<br>
+&#10114 Lightly butter the hot pan, then immediately pour in a small ladle of crepe batter (approx. 1/4 cup) rapidly tilting and rotating so it thinly coats the bottom. If an empty spot remains, it’s okay to pour in a bit more batter to ﬁll the gap, but do it rapidly!<br>
+&#10115 After approximately 30 to 40 seconds, it’s time to ﬂip. Run a thin spatula all the way around the rim of the crepe… work it underneath… lift and ﬂip to cook for another 20 seconds, at most, on the other side. It’s not absolutely necessary to cook the crepe on both sides, but it’s nice to give the second side a light browning too.<br>
+&#10116 When a crepe is nicely brown, remove it to a cutting board, or plate to cool. Once slightly cooled they can be stacked to await immediate use. The batter should make about 8 crepes. Extras can be stored in a self-sealing plastic bag and refrigerated, or frozen, for future use.<br>
+&#10117 For the savory vegetable ﬁlling, start by mincing the fresh garlic and coarsely chopping all the vegetables. I like rugged chunks, but you can chop the veg more ﬁnely for a more delicate presentation if you wish.<br>
+&#10118 In a sauté pan, over medium heat, add the olive oil, the chopped vegetables, rosemary and salt and pepper. Cook to a loose consistency, much like a ratatouille, retaining some of the juices from the vegetables in the pan. Don’t cook until dry. Add a little water if/as needed during cooking.<br>
+&#10119 To assemble the savory crepes, place one crepe on a plate, ﬁrst-cooked side down because it’s browner and more visually appetizing. Fill crepe with an appropriate portion of the sautéed vegetables, roll and serve. Top with extra sautéed vegetables if desired.<br>
+<b>RECIPE NOTES</b><br>
+The pan temperature is critical to getting a beautifully laced, golden brown crepe. It must be almost smoking hot. This is why a cast iron pan is best!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Whole Wheat Blueberry Crepes Recipe Modal -->
+<div class="modal fade" id="myModal5">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Whole Wheat Blueberry Crepes</h5>
+
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 2 ea Eggs
+            &#9656 1.25 cups Milk
+            &#9656 1 Tbsp All Purpose Flour
+            &#9656 1 Tbsp Whole Wheat Flour
+            &#9656 2 Tbsp Melted Butter
+            &#9656 1 cup Blueberries
+            &#9656 2 oz Real Maple Syrup<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Combine the eggs, milk, ﬂour and melted butter in a blender or mixing bowl. Blend ingredients thoroughly to the consistency of thin but viscous (pourable) batter. No lumps please!<br>
+&#10113 Bring a heavy, well seasoned cast iron pan up to medium high heat. A heavy, non-stick aluminum pan will work, but not as well as cast iron. The pan should be big enough to make a crepe the size of a large dinner plate. The pan must be piping hot to create the appetizing brown lace eﬀect of a good crepe. And be prepared to sacriﬁce the ﬁrst one to the pancake gods. It happens to the best of us!<br>
+&#10114 Lightly butter the hot pan, then immediately pour in a small ladle of crepe batter (approx. 1/4 cup) rapidly tilting and rotating so it thinly coats the bottom. If an empty spot remains, it’s okay to pour in a bit more batter to ﬁll the gap, but do it rapidly!<br>
+&#10115 After approximately 30 to 40 seconds, it’s time to ﬂip. Run a thin spatula all the way around the rim of the crepe… work it underneath… lift and ﬂip to cook for another 20 seconds, at most, on the other side. It’s not absolutely necessary to cook the crepe on both sides, but it’s nice to give the second side a light browning too.<br>
+&#10116 When a crepe is nicely brown, remove it to a cutting board, or plate to cool. Once slightly cooled they can be stacked to await immediate use. The batter should make about 8 crepes. Extras can be stored in a self-sealing plastic bag and refrigerated, or frozen, for future use.<br>
+&#10117 To assemble the sweet Maple & Blueberry Crepes, select the last cooked, still warm crepes, fold length-wise the way Scandinavians do, or in quarters, which is typically French. Arrange on a plate, drizzle with a tiny bit of real maple syrup and garnish with blueberries. Strawberries are another option! Because the crepes are thin and dense, unlike thick, spongy, American ﬂapjacks, you need far less syrup to satisfy your sweet tooth and keep your doctor happy about your A1c level. A half ounce per serving is plenty.<br>
+<b>RECIPE NOTES</b><br>
+The pan temperature is critical to getting a beautifully laced, golden brown crepe. It must be almost smoking hot. This is why a cast iron pan is best!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fresh Berry & Quinoa Salmagundi -->
+<div class="modal fade" id="myModal6">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Quinoa Salmagundi</h5>
+          <p>with fresh berry</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 1 cup Quinoa (pre-cooked and cooled)<br>
+            &#9656 1 cup Fresh Raspberries<br>
+            &#9656 .5 cup Fresh Blackberries<br>
+            &#9656 .5 cup Fresh Blueberries<br>
+            &#9656 .25 cup Shallot or Mild Red onion (minced)<br>
+            &#9656 1 ea lemon<br>
+            &#9656 .25 cup Fresh Basil (cut into fine ribbons)<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Combine berries and cooked/cooled quinoa in a mixing bowl.<br>
+&#10113 Finely mince and add onion.<br>
+&#10114 Add juice of lemon.<br>
+&#10115 Chiﬀonade the basil and add to mixture. Toss thoroughly and serve.<br>
+<b>RECIPE NOTES</b><br>
+The pan temperature is critical to getting a beautifully laced, golden brown crepe. It must be almost smoking hot. This is why a cast iron pan is best!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Crab-In-A-Cradle -->
+<div class="modal fade" id="myModal7">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Crab-In-A-Cradle</h5>
+          <p>with avocado</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 1 ea Large Avocado
+            &#9656 4 oz Lump Crab Meat
+            &#9656 1 tsp Fresh Chive (chopped)
+            &#9656 1 ea lemon
+            &#9656 1 pinch salt
+            &#9656 2 pinch freshly ground black pepper<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 In a bowl, shred and ﬂuﬀ 4 oz. of crab meat with a fork. Add the chopped chive. Add the juice from half the lemon. Add one or two grinds of black pepper. Toss the ingredients gently.<br>
+&#10113 Split, pit and peel the avocado. Slice oﬀ and ﬂatten a thin portion of the round bottom of each avocado half so they sit stably on a salad plate. Dowse the avocado with juice of half the lemon to keep the avocado bright and green. Season the cavities with a tiny pinch of salt and pepper.<br>
+&#10114 Fill each avocado half with 2 oz. of the seasoned crab meat mixture. “Pick” out the crab meat with a toothpick so the shreds stand out a little for better presentation. Garnish with extra chive and lemon wedge to serve.<br>
+<b>RECIPE NOTES</b><br>
+This Crab-In-A-Cradle recipe is light, bright and delicious, high in healthy fats, lean protein and surprisingly high in ﬁber. Just keep the added salt to a bare minimum because both fresh-cooked and canned crab is moderately high in sodium. That’s why just a 2oz. serving is recommended for each avocado half.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Parsley Sauce -->
+<div class="modal fade" id="myModal8">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Parsley Sauce</h5>
+
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 .5 ea lemon<br>
+            &#9656 4 Tbsp olive oil<br>
+            &#9656 .5 cup flat leaf parsley (chopped)<br>
+            &#9656 1 tsp capers (chopped)<br>
+            &#9656 1 pinch freshly ground black pepper<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 In a spacious mixing bowl, combine and emulsify the lemon juice and olive oil.<br>
+&#10113 Finely chop the fresh parsley and capers. Add both to the lemon/oil mix. Sprinkle with freshly ground black pepper. Combine thoroughly and serve over roasted or grilled chicken or ﬁsh for a bright, brisk, fresh ﬂavor enhancement.<br>
+<b>RECIPE NOTES</b><br>
+This simple and extremely tasty, no-cook sauce contains only heart healthy olive oil instead of saturated animal fat, and just a hint of sodium from the chopped capers. The bite of lemon and pepper, plus the freshness of the parsley, eliminates the need to add any extra salt.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Maritime Stew -->
+<div class="modal fade" id="myModal9">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Maritime Stew</h5>
+
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 2 Tbsp olive oil<br>
+            &#9656 1 ea Anchovy Fillet<br>
+            &#9656 1 ea onion (coarse dice)<br>
+            &#9656 4 ea garlic cloves<br>
+            &#9656 2 ea Celery Stalks (coarse dice)<br>
+            &#9656 .5 ea fennel bulb (coarse dice)<br>
+            &#9656 1 ea Red chile<br>
+            &#9656 1 cup dry white wine<br>
+            &#9656 1 cup Clam Juice<br>
+            &#9656 1 ea 28oz Can of Tomatoes (no sodium)<br>
+            &#9656 1 qt water (as needed)<br>
+            &#9656 1 Tbsp thyme<br>
+            &#9656 .25 cup parsley (chopped)<br>
+            &#9656 .25 tsp freshly ground black pepper<br>
+            &#9656 1 lb Whole Clams <br>
+            &#9656 1 lb Fresh Mussels<br>
+            &#9656 1 lb Crab Legs (or whole crab)<br>
+            &#9656 1 lb Large Shrimp<br>
+            &#9656 1 ea Red Snapper<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Mince garlic. Finely mince red chili. Coarsely dice the onion, celery and fennel. Chop or smash anchovy.<br>
+&#10113 In a large, heavy-bottomed stockpot, Dutch oven or deep casserole, combine olive oil, anchovy, garlic and chili. Stir and sizzle for a minute, then add vegetables and sauté for a further few minutes.<br>
+&#10114 Add wine, clam juice and no-salt-added crushed tomatoes. Add fresh thyme, parsley and black pepper. Stir and let cook over low heat for 15 minutes until contents simmer..<br>
+&#10115 Increase heat and add all seafood. Cook until clams and mussels begin to open, while crab and shrimp shells blush red. At this point settle the shell ﬁsh in the pot so broth pools at top of pot. Reduce heat to low. Settle the cut chunks of the snapper in the broth. Do not stir the pot at this point. Cover pot and allow snapper to poach intact. And feel free to leave out the head and tail if you’re squeamish. They add ﬂavor, but are not mandatory.<br>
+&#10116 Serve stew in a bowl and be prepared to do some work with your ﬁngers and shell crackers… but it’s worth it!<br>
+<b>RECIPE NOTES</b><br>
+This nutritious and mouth-watering seafood recipe, loaded with lean protein and healthy omega3-rich fats, is fairly expensive if done in large quality with all the shellﬁsh ingredients. However, it easily adapts to fewer diners and a more modest pocketbook. Just reduce all ingredient proportions and eliminate the crab, plus one of the mollusks, either the clams or mussels.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sweet & Savory Cantaloupe Salad -->
+<div class="modal fade" id="myModal10">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Sweet & Savory Cantaloupe Salad</h5>
+        <p>with grapes</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 2 cups Cantaloupe (diced)<br>
+            &#9656 1 cup red flame grapes<br>
+            &#9656 1 ea Celery Stalk<br>
+            &#9656 .5 cup Walnuts (coarsely chopped)<br>
+            &#9656 .5 ea lemon<br>
+            &#9656 1 tsp honey<br>
+            &#9656 1 pinch freshly ground black pepper<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Dice cantaloupe into coarse chunks. De-stem and cut any larger grapes in half. Keep smaller grapes whole. Coarsely chop celery. Combine all fruit, veg and nuts in mixing bowl.<br>
+&#10113 Squeeze juice of half a lemon over other ingredients. Add the honey and pepper. Toss gently but thoroughly and serve.<br>
+
+<b>RECIPE NOTES</b><br>
+Fresh ripe cantaloupe, seedless red ﬂame grape, celery and walnut salad. It’s refreshingly sweet and savory, crisp and crunchy, high in vitamin C, Beta Carotene, Lycopene and Omega 3’s. Yum!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Onion & Garlic Jam -->
+<div class="modal fade" id="myModal11">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Onion & Garlic Jam</h5>
+
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 4 ea Yellow Onions<br>
+            &#9656 6 ea garlic cloves<br>
+            &#9656 3 Tbsp olive oil<br>
+            &#9656 1 pinch salt<br>
+            &#9656 1 pinch black pepper<br>
+            &#9656 1 cup water<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Skin and cut onions into thin lengthwise slices.<br>
+&#10113 Peel, mash and mince garlic.<br>
+&#10114 In a large, deep-sided frying pan, sauté the onions and garlic in olive oil over medium high heat for 3 to 5 minutes, uncovered, to start browning.<br>
+&#10115 Reduce heat to very low and cook onions for approximately 1 hour, using a “ﬂoating lid” made of shaped aluminum foil and designed to sink down below the rim of the pan to partially retain moisture as the onions slowly caramelize. Using a regular tight-ﬁtting lid traps nearly all moisture so that the onions do not caramelize as well. Stir and turn onions occasionally, re- spreading across pan for maximum contact with heat source and continue cooking low and slow until all the onions become amber-brown and jammy. Add a little water if or when necessary.<br>
+&#10116 Serve at room temperature. Extra onion jam stores well in the refrigerator.<br>
+<b>RECIPE NOTES</b><br>
+This ultimately sweet and savory ‘Jam’ features no added sugar, just the naturally earthy sweetness of caramelized onion, and is a superb condiment to compliment a hamburger, as a topping for meatloaf, instead of sugary ketchup, as a superb base spread for various party hors d’oeuvres, or as an added ingredient to various soups and stews. It has myriad excellent and delicious uses!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Pisto Manchego -->
+<div class="modal fade" id="myModal12">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Pisto Manchego</h5>
+        <p>with vegetables</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 1.5 lbs Ripe Tomatoes<br>
+            &#9656 3 Tbsp olive oil<br>
+            &#9656 1 sprig Rosemary<br>
+            &#9656 3 sprigs thyme<br>
+            &#9656 3 sprigs oregano<br>
+            &#9656 .25 tsp freshly ground black pepper<br>
+            &#9656 1 ea onion<br>
+            &#9656 5 ea garlic cloves<br>
+            &#9656 1 ea Red chile<br>
+            &#9656 1 ea red bell pepper<br>
+            &#9656 1 ea green bell pepper<br>
+            &#9656 1 ea zucchini <br>
+            &#9656 .5 ea Eggplant <br>
+            &#9656 1 tsp cumin<br>
+            &#9656 1 Tbsp Paprika<br>
+            &#9656 .33 cup Spanish Olives<br>
+            &#9656 1 Tbsp Olive Brine<br>
+            &#9656 4 ea Eggs<br>
+            &#9656 1 Tbsp parsley (chopped)<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Cut a shallow crisscross into the bud-end of each tomato and plunge into a large pot of simmering water for no more than a minute to blanch and loosen the skin. Remove, let cool for a moment, then peel away the skin and core each tomato. Then coarsely chop all the skinless tomatoes.<br>
+&#10113 Start the tomato sauce with 1 tablespoon of olive oil in a medium-sized pot over medium heat. Add the freshly peeled and chopped tomatoes, along with the sprigs of fresh rosemary, oregano and thyme. Dried herbs will also work. Add several grinds of black pepper. Stir and let simmer for about 15 minutes, lowering the heat a little midway.<br>
+&#10114 Coarsely chop the onion, bell peppers, zucchini and eggplant. Mince the garlic and red chili. Sauté all with 2 tablespoons of olive oil in a fairly large, slight deep-sided pan over medium-high heat. After a couple minutes reduce heat to medium, adding the spices and olives. Continue sautéing the spiced vegetables for about 10 minutes total.<br>
+&#10115 Reduce the heat to low. Add the freshly made tomato sauce into the pan with the sautéed vegetables and continue to cook another 10 to 15 minutes, low and slow.<br>
+&#10116 The last step is to use the back of a large serving spoon to create depressions in the Pisto mixture. Crack one egg into each depression. Cover the pan for 4 to 5 minutes until the eggs are coddled in the Pisto broth broth until set. Remove from heat, bring to the table in the pan and uncover to a bloom of fragrant steam. Sprinkled with chopped parsley and dig in!<br>
+<b>RECIPE NOTES</b><br>
+This rustic, hearty, one pan meal is substantially plant-based, very low fat, low sodium and superbly nutritious thanks to the rich colors and anti-oxidant properties from the tomatoes, peppers, egg plant and herbs & spices. It’s just as good without the eggs. Try it either way, but here’s another trick. Instead of eggs, try nestling several fresh, boneless chunks of cod, halibut or other ﬁrm white ﬁsh down into the Pisto. It will cook in just a little longer than would the eggs, and oﬀers a very diﬀerent but even leaner protein source for the dish.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Lamb Kebab -->
+<div class="modal fade" id="myModal13">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Lamb Kebab</h5>
+        <p>with garnish</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 1 lb Leg of Lamb (cut to 1” cubes)<br>
+            &#9656 1 Tbsp cumin<br>
+            &#9656 1 Tbsp coriander<br>
+            &#9656 3 ea garlic cloves (minced)<br>
+            &#9656 1 tsp Rosemary (finely minced)<br>
+            &#9656 2 Tbsp olive oil<br>
+            &#9656 .5 ea lemon<br>
+            Garnish Ingredients<br>
+            &#9656 .33 cup Hummus<br>
+            &#9656 .33 cup Tzetziki<br>
+            &#9656 1 fan romaine lettuce leaves<br>
+            &#9656 1 ea Tomato<br>
+            &#9656 1 dz Kalamata Olives<br>
+            &#9656 3 ea Pickled Pepperoncini<br>
+            &#9656 1 ea Whole Wheat Pita Pocket<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Trim all fat and sinew from the lamb. Then cut into 1” cubes. Place in a mixing bowl and combine with the ground cumin, coriander, minced garlic, ﬁnely minced rosemary, black pepper and olive oil. Coat the meat thoroughly with the marinade. Cover and let stand up to an hour in the refrigerator.<br>
+&#10113 Arrange approximately 4 oz. of lamb on each metal skewer, keeping the lamb cubes pressed together, not separated. Grill the skewered lamb chunks on a fairly hot grill to a doneness of medium rare or medium. Turn the skewers a few times to get a light char on all sides. Squeeze with the juice of half a lemon about halfway through the grilling process. It brightens the ﬂavors.<br>
+&#10114 Decorate a serving plate with a few leaves of Romaine. Dress with small containers of Hummus or Tzetziki, or both, along with tomato, olives, pickled peppers and a toasted round of whole-wheat Pita. Remove the lamb from the skewer and serve.<br>
+<b>RECIPE NOTES</b><br>
+Keep the lamb very lean and just 4oz. per serving. The herbs, spices and lemon completely eliminated the need for salt!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Spanish Tortilla -->
+<div class="modal fade" id="myModal14">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Spanish Tortilla</h5>
+        <p>topped with Manchego Cheese</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 3 Tbsp olive oil<br>
+            &#9656 1.5 cups Baby Potato (sliced & par-cooked)<br>
+            &#9656 1 ea onion<br>
+            &#9656 3 ea garlic cloves<br>
+            &#9656 4 ea Anchovy Fillets (coarse chopped)<br>
+            &#9656 .25 cup Sun-Dried Tomatoes<br>
+            &#9656 1 cup Chick peas<br>
+            &#9656 1 handful Green Beans (pre-blanched & coarse chopped)<br>
+            &#9656 1 ea red bell pepper<br>
+            &#9656 1 bunch flat leaf parsley (chopped)<br>
+            &#9656 6 ea Eggs<br>
+            &#9656 1 oz Sherry<br>
+            &#9656 .5 cup Manchego Cheese (grated)<br>
+            &#9656 freshly ground black pepper<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 In a medium-sized, non-stick fry pan, over medium heat, sauté potato slices in 2 tablespoons of olive oil until lightly browned and crusted.<br>
+&#10113 Add minced garlic, diced onion, anchovy, sun-dried tomato, chick peas, green beans and red bell pepper. Combine and sauté until vegetables lose moisture and begin to brown.<br>
+&#10114 Scramble the eggs with sherry and black pepper.<br>
+&#10115 Add chopped parsley to pan, combining with other ingredients. Reduce heat to very low. Add ﬁnal tablespoon of olive oil around edge of pan, then pour scrambled egg mixture evenly over vegetables. Gently combine, settle and level all ingredients. Cover the pan and heat through for 5 to 7 minutes until eggs are set in the middle and the entire Tortilla slides in the pan.<br>
+&#10116 Turn oﬀ heat. Sprinkle grated cheese sparingly over top. Re-cover pan until cheese is melted.<br>
+&#10117 Let pan cool to warm or room temp before sliding Tortilla onto a serving platter.<br>
+
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Tomates Farcies -->
+<div class="modal fade" id="myModal15">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Tomates Farcies</h5>
+        <p>with green peas</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 6 ea Medium-sized Ripe Tomatoes<br>
+            &#9656 2 Tbsp olive oil<br>
+            &#9656 .25 tsp salt<br>
+            &#9656 1 bunch fresh thyme<br>
+            &#9656 2 cups Sweet Peas (fresh frozen is okay)<br>
+            &#9656 .5 Tbsp butter<br>
+            &#9656 1 ea Shallot (finely minced)<br>
+            &#9656 .25 tsp Fennel Fronds (finely minced)<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Gently cut away the stem end ‘navel’ of each tomato without piercing too deeply. Then squarely slice oﬀ the blossom-end of tomato in order to reveal internal structure. Using a small spoon or melon baller, core out each tomato, removing the internal rib structure and seed gel. Place top slice from tomato in the bottom of the hollowed out interior.<br>
+&#10113 Place tomatoes in baking dish and dress interior cavity of each tomato with salt, pepper, fresh thyme & olive oil.<br>
+&#10114 Add juice of lemon.<br>
+&#10115 Place in pre-heated 400 degree oven for 10 to 20 minutes, depending on ripeness, until tomatoes yield to the touch, but do not sag, and skin wrinkles.<br>
+&#10116 Place in pre-heated 400 degree oven for 10 to 20 minutes, depending on ripeness, until tomatoes yield to the touch, but do not sag, and skin wrinkles.<br>
+&#10117 In a sauce pan, over medium heat, add 1 tablespoon olive oil and 1/2 tablespoon butter. Then add shallots and sauté for a minute or two.<br>
+&#10118 Add garden fresh, or frozen/defrosted peas and gently sauté for another minute. Add an ounce or two of water, or low-sodium stock, cover and turn oﬀ heat. Let steam for 2 to 3 minutes.<br>
+&#10119 Remove tomatoes from oven. Add ﬁnely chopped fennel fronds to peas, combine and ﬁll tomatoes with pea mixture.<br>
+&#10120 Garnish with small fennel fronds and serve immediately, or return to a warm oven for later service.<br>
+<b>RECIPE NOTES</b><br>
+Keep the lamb very lean and just 4oz. per serving. The herbs, spices and lemon completely eliminated the need for salt!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Explore our Recipes-->
+<br>
+<br>
+<h1 align="center" style="color: #81cf01">Explore our Recipes</h1>
+  <div class="divider div-transparent"></div>
+<h5 align="center" style="color: #81cf01">Week 1</h5>
+<br>
+<br>
+  
+<!--cards-->
+<div class="container">
+  <!--Open-Face Burger Deluxe-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal1">
+    <div class="card__header">
+      <img src="img\openface burger deluxe.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Open-Face Burger Deluxe &#x1F525</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with healthy vegetable salad <br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 30 MIN </p>
+    </div>
+  </div>
+  <!--Half & Half Meat Loaf-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal2">
+    <div class="card__header">
+      <img src="img\meatloaf.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Half & Half Meat Loaf &#x1F525</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with mash potato <br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 20 MIN </p>
+    </div>
+  </div>
+  <!--Mango Whip-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal3">
+    <div class="card__header">
+      <img src="img\mango whip.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Mango Whip &#x1F525</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with mint and foamy top <br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 10 MIN </p>
+    </div>
+  </div>
+<!--Savory Whole Wheat Crepes-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal4">
+    <div class="card__header">
+      <img src="img\savory crepes.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Savory Whole Wheat Crepes</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with a touch of sweetness <br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 40 MIN </p>
+    </div>
+  </div>
+  <!--Whole Wheat Blueberry Crepes-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal5">
+    <div class="card__header">
+      <img src="img\blueberry crepes.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Whole Wheat Blueberry Crepes</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 20 MIN </p>
+    </div>
+  </div>
+  <!--Quinoa Salmagundi & Fresh Berry-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal6">
+    <div class="card__header">
+      <img src="img\fresh berry.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Quinoa Salmagundi</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with fresh berry <br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 20 MIN </p>
+    </div>
+  </div>
+  <!--Crab-In-A-Cradle-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal7">
+    <div class="card__header">
+      <img src="img\crab in avocado.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Crab-In-A-Cradle</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with Avocado <br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 5 MIN </p>
+    </div>
+  </div>
+  <!--Parsley Sauce-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal8">
+    <div class="card__header">
+      <img src="img\parsley sauce.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Parsley Sauce</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with lemon <br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 5 MIN </p>
+    </div>
+  </div>
+  <!--Maritime Stew-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal9">
+    <div class="card__header">
+      <img src="img\maritime stew.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Maritime Stew</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 40 MIN </p>
+    </div>
+  </div>
+    <!--Sweet & Savory Cantaloupe Salad-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal10">
+    <div class="card__header">
+      <img src="img\cantaloupe salad.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Sweet & Savory Cantaloupe Salad</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with grapes <br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 10 MIN </p>
+    </div>
+  </div>
+  <!--Onion & Garlic Jam-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal11">
+    <div class="card__header">
+      <img src="img\onion garlic jam.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Onion & Garlic Jam</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 5 MIN </p>
+    </div>
+  </div>
+  <!--Pisto Manchego-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal12">
+    <div class="card__header">
+      <img src="img\pisto manchego.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Pisto Manchego</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with vegetables <br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 40 MIN </p>
+    </div>
+  </div>
+      <!--Lamb Kebab-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal13">
+    <div class="card__header">
+      <img src="img\lamb kebab.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Lamb Kebab</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with garnish <br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 20 MIN </p>
+    </div>
+  </div>
+  <!--Spanish Tortilla-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal14">
+    <div class="card__header">
+      <img src="img\spanish tortilla.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Spanish Tortilla</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%"> toped with Manchego Chese <br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 45 MIN </p>
+    </div>
+  </div>
+  <!--Tomates Farcies-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal15">
+    <div class="card__header">
+      <img src="img\tomates farcies.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Tomates Farcies</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with sweet peas<br>Calories: 263, Fats: 5g, Carbs: 30g</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 30 MIN </p>
+    </div>
+  </div>
+</div>
+
+<!-- footer Start -->
+    <footer class="site-footer"; style="background-color: #1a2e46">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <h6 style="color:white;">About</h6>
+            <p style="color:white;"><b>Savor tasty food from 'In a Box'!</b> In a Box offers top-notch meat quality and fresh vegetables, 
+            and delivers them to your doorsteps.</p>
+          </div>
+
+
+          <div class="col-xs-6 col-md-4">
+            <h6 style="color:white;">Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="recipe guides.html">Recipe Guides</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+      
+      
+      
+      <div class="col-xs-6 col-md-4">
+            <h6 style="color:white;">Contact Us</h6>
+            <p style="color:white;">Phone: 0000000000<br><br>Address: Hell where satan lives</p>
+          </div>
+      
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+    <div style="color:white;">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text;">Copyright &copy; 2022 All Rights Reserved by 
+         <a href="#">In a Box</a>.
+            </p>
+          </div>
+
+        </div>
+
+<div class="footer-social-icon">
+<div style="color:white;">
+<span>Follow us</span>
+
+<a class="footer-icon facebook" href="https://www.facebook.com/" target="_blank">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
+viewBox="0 0 512 512" fill="#385C8E" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+<path d="M134.941,272.691h56.123v231.051c0,4.562,3.696,8.258,8.258,8.258h95.159c4.562,0,8.258-3.696,8.258-8.258V273.78h64.519c4.195,0,7.725-3.148,8.204-7.315l9.799-85.061c0.269-2.34-0.472-4.684-2.038-6.44c-1.567-1.757-3.81-2.763-6.164-2.763h-74.316V118.88c0-16.073,8.654-24.224,25.726-24.224c2.433,0,48.59,0,48.59,0c4.562,0,8.258-3.698,8.258-8.258V8.319c0-4.562-3.696-8.258-8.258-8.258h-66.965C309.622,0.038,308.573,0,307.027,0c-11.619,0-52.006,2.281-83.909,31.63c-35.348,32.524-30.434,71.465-29.26,78.217v62.352h-58.918c-4.562,0-8.258,3.696-8.258,8.258v83.975C126.683,268.993,130.379,272.691,134.941,272.691z"/>
+</g>
+</svg>
+</a>
+<a class="footer-icon twitter" href="https://twitter.com/" target="_blank">
+<svg version="1.1" viewbox="0 0 512 512" width="35px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#2CA7E0">
+<g>
+ <path d="M485.98,113.141c-16.923,7.506-35.109,12.578-54.197,14.858    c19.48-11.679,34.445-30.171,41.49-52.208c-18.234,10.814-38.43,18.668-59.925,22.899c-17.213-18.341-41.738-29.799-68.88-29.799    c-52.114,0-94.368,42.25-94.368,94.364c0,7.396,0.834,14.598,2.444,21.505c-78.427-3.936-147.962-41.504-194.504-98.597    c-8.123,13.937-12.777,30.146-12.777,47.441c0,32.739,16.659,61.623,41.98,78.546c-15.469-0.491-30.02-4.735-42.742-11.804    c-0.009,0.395-0.009,0.788-0.009,1.188c0,45.721,32.529,83.859,75.698,92.531c-7.918,2.156-16.255,3.311-24.861,3.311    c-6.081,0-11.992-0.593-17.755-1.693c12.009,37.488,46.858,64.773,88.153,65.533c-32.296,25.312-72.985,40.396-117.198,40.396    c-7.617,0-15.128-0.446-22.511-1.32c41.762,26.775,91.365,42.4,144.655,42.4c173.574,0,268.493-143.794,268.493-268.496    c0-4.091-0.092-8.16-0.273-12.208C457.332,148.684,473.33,132.064,485.98,113.141z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</path></g>
+</svg>
+</a>
+<a class="footer-icon youtube" href="https://www.youtube.com/" target="_blank">
+<svg width="35px" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g>
+<path d="M31.67,9.179c0,0-0.312-2.353-1.271-3.389c-1.217-1.358-2.58-1.366-3.205-1.443C22.717,4,16.002,4,16.002,4 h-0.015c0,0-6.715,0-11.191,0.347C4.171,4.424,2.809,4.432,1.591,5.79C0.633,6.826,0.32,9.179,0.32,9.179S0,11.94,0,14.701v2.588 c0,2.763,0.32,5.523,0.32,5.523s0.312,2.352,1.271,3.386c1.218,1.358,2.815,1.317,3.527,1.459C7.677,27.919,15.995,28,15.995,28 s6.722-0.012,11.199-0.355c0.625-0.08,1.988-0.088,3.205-1.446c0.958-1.034,1.271-3.386,1.271-3.386s0.32-2.761,0.32-5.523v-2.588 C31.99,11.94,31.67,9.179,31.67,9.179z" fill="#E02F2F"/>
+<polygon fill="#FFFFFF" points="12,10 12,22 22,16"/>
+</g>
+</svg>
+</a>
+
+</div>
+</div>
+
+      
+        </div>
+      </div>
+</footer>
+<!-- footer end -->
+ </html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="img\favicon.ico" type="image/x-icon" style="max-width: 500px">
+  <title>In a Box - Other Items</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="footer.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<style type="text/css">
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+
+.wrapper
+{
+  padding-bottom: 20px;
+}
+
+.divider
+{
+  position: relative;
+  margin-top: 20px;
+  height: 50px;
+}
+
+.div-transparent:before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #6dad03, transparent);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1800px;
+  margin-block: 1rem;
+  gap: 2rem;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(25rem, calc(25rem + 2vw), 25rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: white;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+.card__header{
+  font-family:'Apple Chancery';
+  color: navy;
+  font-weight: bolder;
+}
+
+.btn {
+  background-color: #99cc00;
+  border: none;
+  color: white;
+  padding: 0.5rem 6rem;
+  text-align: center;
+  font-size: 16px;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #1a2e46;
+  color: white;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.h1 {
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+
+</head>
+<!--backgroundcolor-->
+<body style="background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);">
+
+
+ <!--- navbar start --->
+<nav class="navbar navbar-expand-lg navbar-light">
+
+    <div class="container-fluid">
+      <img src="img\logo.png" style="max-width: 100%; max-height: 60px" >
+    <a class="navbar-brand" href="home.html">In a Box</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navColor01" aria-controls="navColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services and products offered</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="recipe guides.html">Recipe guides</a>
+            <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="bake at home set.html">Bake at Home Sets</a>
+            <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="ingredients.html">Ingredients</a>
+            <div class="dropdown-divider"></div> 
+            <a class="dropdown-item" href="other items.html">Other items</a>
+      </div>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="packages offered.html">Packages Offered</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+ </div>
+ </div>
+ </nav>
+ <!--- navbar end --->
+ 
+   <!-- Sign Up Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Sign Up
+</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+<form>
+
+<div class="mb-3 mt-3">
+    <label for="name" class="form-label">Full Name:</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name">
+  </div>
+
+  <div class="mb-3 mt-3">
+    <label for="username" class="form-label">Username:</label>
+    <input type="text" class="form-control" id="username" name="username" placeholder="Enter your  username">
+  </div>
+
+
+<div class="mb-3 mt-3">
+    <label for="phone" class="form-label">Mobile Number:</label>
+    <input type="tel" class="form-control" id="phone"  name="phone" placeholder="Enter your moblie number">
+  </div>
+
+
+
+<div class="mb-3 mt-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+  </div>
+
+
+<div>
+<label for="password">Password:</label>
+<input type="password" name="password" class="form-control" id="password" placeholder="Enter your password" name="password">
+</div>
+<br>
+<div>
+<label for="password">Confirm Password:</label>
+<input type="password" name="cpassword" class="form-control" id="cpassword" placeholder="Confirm your password" name="cpassword">
+</div>
+<br>
+
+<div class="container-fluid" align="center">
+<button type="submit" class="btn btn-dark">Sign Up</button>
+<br><b>or</b><br>
+<a href="#">Sign In</a>
+</div>
+</form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Open-Face Burger Deluxe Recipe Modal -->
+<div class="modal fade" id="myModal1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Open-Face Burger Deluxe</h5>
+        <p>with healthy vegetable salad</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 1 lb 93% lean ground beef<br>
+            &#9656 3 medium onions<br>
+            &#9656 1 Tbsp capers<br>
+            &#9656 1 dill pickle<br>
+            &#9656 1 tsp Dijon mustard<br>
+            &#9656 2 garlic cloves<br>
+            &#9656 1 Tbsp fresh bread crumbs<br>
+            &#9656 2 Tbsp olive oil<br>
+            &#9656 fresh ground black pepper<br>
+            &#9656 1 slice of toasted baguette<br>
+            &#9656 1 large tomato<br>
+            &#9656 1 ripe avocado<br>
+            &#9656 romaine lettuce leaves<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Slice two of the onions lengthwise into thin strips and place in a medium saute pan, over medium-low heat with 1 tablespoon of olive oil. Partially cover with aluminum foil. The foil traps some of the moisture during cooking, but not all. This allows the onions to caramelize without burning and end up sweet, tender and deep amber in color. Reserve the onions to be served warm as a garnish with the burgers.<br>
+&#10113 Grate one onion, mince garlic, finely chop pickles, finely chop capers and combine in a mixing bowl with the extra lean ground beef, mustard, black pepper, I tablespoon of olive oil and black pepper. Mix thoroughly and form into four plump patties.<br>
+&#10114 Grill or pan fry burgers over medium heat to a doneness of medium-rare. or at the most medium. Well-done burgers will dry out. A little pink should still show. Also, extra low-fat burgers cook quickly, so keep on eye on them.<br>
+&#10115 Toast one slice of baguette or sourdough and place on a plate already garnished with tender leaves of romaine, avocado and tomato slices. Serve the burger on the toast, open-face, with the caramelized onions alongside, or smothering the burger patty. These are a somewhat healthier and more sophisticated substitute for French fries.<br>
+<b>RECIPE NOTES</b><br>
+Do not add salt to this recipe! The capers, pickle and mustard already contain ample sodium and impart a lovely flavor accent to the meat.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Half & Half Meat Loaf Recipe Modal -->
+<div class="modal fade" id="myModal2">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Half & Half Meat Loaf</h5>
+        <p>with mash potato</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 .75 lb 7% Fat Ground Beef<br>
+            &#9656 .75 lb 7% Fat Ground Pork<br>
+            &#9656 1 ea onion<br>
+            &#9656 2 ea Celery Stalks<br>
+            &#9656 1 ea Carrot<br>
+            &#9656 1 cup Brown Mushrooms (for extra meat texture)<br>
+            &#9656 5 ea garlic cloves<br>
+            &#9656 2 Tbsp olive oil<br>
+            &#9656 .5 tsp salt<br>
+            &#9656 .5 tsp black pepper<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Clean and chop the onion, celery, carrot, garlic and mushroom. Combine all the vegetable ingredients in a food processor and pulse to a consistency of coarse damp sand.<br>
+&#10113 In a large mixing bowl, combine the beef and pork, along with the processed vegetables, olive oil and seasonings. Mix thoroughly by hand. Then form the mixture into an oiled loaf pan or casserole. Place in a 375 degree oven for 30 to 40 minutes.<br>
+&#10114 Remove meatloaf from oven. Pour oﬀ and reserve the lean, low-fat pan liquor as a light, broth-like gravy. Let the meatloaf stand and rest for a few minutes before cutting and serving with potato/cauliﬂower mash. Drizzle with the pan liquor as desired.<br>
+<b>RECIPE NOTES</b><br>
+This stick-to-your-ribs dish offers reduced saturated fat and calories thanks to the use of very low-fat ground meat and a medley of aromatic vegetables in almost equal quantity. Served over a healthy dollop of our half & half potato/cauliﬂower mash, it’s extremely ‘comfortable’ comfort food!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mango Whip Recipe Modal -->
+<div class="modal fade" id="myModal3">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="container-fluid">
+        <h5 class="modal-title" style="color: navy; font-family: 'Apple Chancery'; font-weight: bolder;">Mango Whip</h5>
+        <p>with mint and foamy top</p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p>
+        <b>INGREDIENTS</b><br>
+            &#9656 2 ea Ripe Mangoes<br>
+            &#9656 1 cup Non-Fat Evaporated Milk<br>
+            &#9656 6 sprigs fresh mint<br>
+
+<b>INSTRUCTIONS</b><br>
+&#10112 Pre-chill both the whole mangoes and the evaporated milk.<br>
+&#10113 Peel and dice the mangoes into small cubes. Place most of the diced mango in a blender or food processor and puree to a smooth, silky consistency. Reserve a small portion of the diced mango for garnish.<br>
+&#10114 Pour the pre-chilled, non-fat evaporated milk into a pre-chilled mixing bowl and whip at medium-high speed to the consistency of semi-stiﬀ peaks.<br>
+&#10115 At this stage, gently add the mango puree and mix on slow speed for about 30 seconds, incorporating the two ingredients thoroughly. This step may also be done by hand, folding the mango puree into the whipped milk for a ﬁrmer overall consistency.<br>
+&#10116 Place a small portion of the reserved, diced mango in the bottom of each individual serving glass. They spoon in the Mango Whip. Chill the ﬁlled glasses for at least 15minutes before serving. Garnish with a small sprig of mint.<br>
+<b>RECIPE NOTES</b><br>
+This super light, incredibly easy dessert recipe consists of just 2 ingredients, contains no saturated fat and no added sugar, yet it’s subtly, pleasantly sweet thanks to the ripe mango.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="container-fluid" align="center">
+<button type="button" class="btn btn-dark">Start Cooking</button>
+<br>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--meal planners-->
+<br>
+<h1 align="center" style="color: #81cf01">Meal Planners</h1>
+<div class="wrapper">
+  <div class="divider div-transparent"></div>
+</div>
+<div class="container" style="padding: 0% 5%">
+<div class="row">
+  <div class="column">
+    <img src="img/meal planners.jpg" style="top: 20%">
+  </div>
+  <div class="column" style="margin-top: 10%">
+    <h3>Both printable and online meal planners are now available at 'In a Box'. </h3>
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">See More</button>
+  </div>
+</div>
+</div>
+<!-- nutritional app-->
+<br>
+<br>
+<h1 align="center" style="color: #81cf01">Nutritional Information App</h1>
+<div class="wrapper">
+  <div class="divider div-transparent"></div>
+</div>
+<div class="container" style="padding: 0% 5%">
+<div class="row">
+  <div class="column" style="margin-top: 10%">
+    <h3>Nutritional information apps provide nutritional facts on the receipes/ foods ordered from 'In a Box'.</h3>
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Purchase</button>
+  </div>
+  <div class="column">
+    <img src="img/nutritional information apps.jpg" style="top: 20%">
+  </div>
+</div>
+</div>
+<!--weekly special choices-->
+<br>
+<br>
+<h1 align="center" style="color: #81cf01">Weekly Special Choices</h1>
+<div class="wrapper">
+  <div class="divider div-transparent"></div>
+</div>
+  
+<!--cards-->
+<div class="container">
+  <!--Open-Face Burger Deluxe-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal1">
+    <div class="card__header">
+      <img src="img\openface burger deluxe.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Open-Face Burger Deluxe</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with healthy vegetable salad</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 30 MIN </p>
+    </div>
+  </div>
+  <!--Half & Half Meat Loaf-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal2">
+    <div class="card__header">
+      <img src="img\meatloaf.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Half & Half Meat Loaf</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with mash potato</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 20 MIN </p>
+    </div>
+  </div>
+  <!--Mango Whip-->
+  <div class="card" data-bs-toggle="modal" data-bs-target="#myModal3">
+    <div class="card__header">
+      <img src="img\mango whip.jpg" alt="card__image" class="card__image" width="600" height="250"><br>
+      <h5 style="margin-left: 5%" ><b>Mango Whip</b></h5>
+    </div>
+    <div class="card__body">
+      <p style="margin-left: 5%">with mint and foamy top</p>
+    </div>
+        <div class="card__footer">
+      <p style="color: #81cf01">&#x1F551 10 MIN </p>
+    </div>
+  </div>
+
+</div>
+<!--gift boxes-->
+<br>
+<br>
+<h1 align="center" style="color: #81cf01">Gift Boxes</h1>
+<div class="wrapper">
+  <div class="divider div-transparent"></div>
+</div>
+<div class="container" style="padding: 0% 5%">
+<div class="row">
+  <div class="column">
+    <img src="img/gift boxes.jpg" style="top: 20%">
+  </div>
+  <div class="column" style="margin-top: 10%">
+    <h3>You can purchase trendy gift boxes along with your orders at 'In a Box'. </h3>
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Purchase</button>
+  </div>
+</div>
+</div>
+
+<!-- footer Start -->
+    <footer class="site-footer"; style="background-color: #1a2e46">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <h6 style="color:white;">About</h6>
+            <p style="color:white;"><b>Savor tasty food from 'In a Box'!</b> In a Box offers top-notch meat quality and fresh vegetables, 
+            and delivers them to your doorsteps.</p>
+          </div>
+
+
+          <div class="col-xs-6 col-md-4">
+            <h6 style="color:white;">Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="recipe guides.html">Recipe Guides</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+      
+      
+      
+      <div class="col-xs-6 col-md-4">
+            <h6 style="color:white;">Contact Us</h6>
+            <p style="color:white;">Phone: 0000000000<br><br>Address: Hell where satan lives</p>
+          </div>
+      
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+    <div style="color:white;">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text;">Copyright &copy; 2022 All Rights Reserved by 
+         <a href="#">In a Box</a>.
+            </p>
+          </div>
+
+        </div>
+
+<div class="footer-social-icon">
+<div style="color:white;">
+<span>Follow us</span>
+
+<a class="footer-icon facebook" href="https://www.facebook.com/" target="_blank">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
+viewBox="0 0 512 512" fill="#385C8E" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+<path d="M134.941,272.691h56.123v231.051c0,4.562,3.696,8.258,8.258,8.258h95.159c4.562,0,8.258-3.696,8.258-8.258V273.78h64.519c4.195,0,7.725-3.148,8.204-7.315l9.799-85.061c0.269-2.34-0.472-4.684-2.038-6.44c-1.567-1.757-3.81-2.763-6.164-2.763h-74.316V118.88c0-16.073,8.654-24.224,25.726-24.224c2.433,0,48.59,0,48.59,0c4.562,0,8.258-3.698,8.258-8.258V8.319c0-4.562-3.696-8.258-8.258-8.258h-66.965C309.622,0.038,308.573,0,307.027,0c-11.619,0-52.006,2.281-83.909,31.63c-35.348,32.524-30.434,71.465-29.26,78.217v62.352h-58.918c-4.562,0-8.258,3.696-8.258,8.258v83.975C126.683,268.993,130.379,272.691,134.941,272.691z"/>
+</g>
+</svg>
+</a>
+<a class="footer-icon twitter" href="https://twitter.com/" target="_blank">
+<svg version="1.1" viewbox="0 0 512 512" width="35px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#2CA7E0">
+<g>
+ <path d="M485.98,113.141c-16.923,7.506-35.109,12.578-54.197,14.858    c19.48-11.679,34.445-30.171,41.49-52.208c-18.234,10.814-38.43,18.668-59.925,22.899c-17.213-18.341-41.738-29.799-68.88-29.799    c-52.114,0-94.368,42.25-94.368,94.364c0,7.396,0.834,14.598,2.444,21.505c-78.427-3.936-147.962-41.504-194.504-98.597    c-8.123,13.937-12.777,30.146-12.777,47.441c0,32.739,16.659,61.623,41.98,78.546c-15.469-0.491-30.02-4.735-42.742-11.804    c-0.009,0.395-0.009,0.788-0.009,1.188c0,45.721,32.529,83.859,75.698,92.531c-7.918,2.156-16.255,3.311-24.861,3.311    c-6.081,0-11.992-0.593-17.755-1.693c12.009,37.488,46.858,64.773,88.153,65.533c-32.296,25.312-72.985,40.396-117.198,40.396    c-7.617,0-15.128-0.446-22.511-1.32c41.762,26.775,91.365,42.4,144.655,42.4c173.574,0,268.493-143.794,268.493-268.496    c0-4.091-0.092-8.16-0.273-12.208C457.332,148.684,473.33,132.064,485.98,113.141z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</path></g>
+</svg>
+</a>
+<a class="footer-icon youtube" href="https://www.youtube.com/" target="_blank">
+<svg width="35px" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g>
+<path d="M31.67,9.179c0,0-0.312-2.353-1.271-3.389c-1.217-1.358-2.58-1.366-3.205-1.443C22.717,4,16.002,4,16.002,4 h-0.015c0,0-6.715,0-11.191,0.347C4.171,4.424,2.809,4.432,1.591,5.79C0.633,6.826,0.32,9.179,0.32,9.179S0,11.94,0,14.701v2.588 c0,2.763,0.32,5.523,0.32,5.523s0.312,2.352,1.271,3.386c1.218,1.358,2.815,1.317,3.527,1.459C7.677,27.919,15.995,28,15.995,28 s6.722-0.012,11.199-0.355c0.625-0.08,1.988-0.088,3.205-1.446c0.958-1.034,1.271-3.386,1.271-3.386s0.32-2.761,0.32-5.523v-2.588 C31.99,11.94,31.67,9.179,31.67,9.179z" fill="#E02F2F"/>
+<polygon fill="#FFFFFF" points="12,10 12,22 22,16"/>
+</g>
+</svg>
+</a>
+
+</div>
+</div>
+
+      
+        </div>
+      </div>
+</footer>
+<!-- footer end -->
+ </html>
